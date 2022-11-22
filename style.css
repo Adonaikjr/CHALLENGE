@@ -11,26 +11,30 @@ body {
     padding: 0px 20px 0px 20px;
     font-family: 'Inter', sans-serif;
 }
-p{
+
+p {
     font-size: 16px;
 }
 
 
-h2{
+h2 {
     color: var(--SoftOrange)
 }
+
 li {
     cursor: pointer;
     border-bottom: solid 1px transparent;
     transition: 0.5s;
     padding-bottom: 4px;
 }
-li:hover{
+
+li:hover {
     transition: 1s;
     border-bottom: solid 1px;
     border-color: var(--SoftRed);
-    
+
 }
+
 :root {
     --SoftOrange: hsl(35, 77%, 62%);
     --SoftRed: hsl(5, 85%, 63%);
@@ -52,11 +56,13 @@ li:hover{
     justify-content: space-between;
     align-items: center;
     padding: 5rem 5rem 2.5rem 5rem;
+    flex-wrap: wrap;
 }
-.ContainerNav{
-    display: flex; 
-    width: 50%; 
-    justify-content: space-between; 
+
+.ContainerNav {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -66,8 +72,53 @@ li:hover{
 
 .ContainerMain {
     display: flex;
-    margin: 0rem 5rem 0rem 5rem;
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem 5rem 2.5rem 5rem;
     gap: 1rem;
+
+}
+
+@media only screen and (max-width: 1030px) {
+    body {
+        padding: 0;
+    }
+
+    .ContainerMain {
+        flex-direction: column;
+        padding: 0;
+
+    }
+
+    .ContainerHeader {
+        width: 100%;
+        padding: 0rem;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .ContainerNav {
+        width: 100%;
+        margin: 2rem;
+        justify-content: center;
+
+    }
+
+    .ContainerFooter {
+        flex-direction: column;
+    }
+
+    .ContentCards {
+        margin: 2rem;
+    }
+
+    .SectionMain {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
 }
 
 .ContentMain {
@@ -76,10 +127,10 @@ li:hover{
     align-items: center;
 }
 
-.SectionMain{
-    display: flex; 
-    width: 100%; 
-    justify-content: space-between; 
+.SectionMain {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -97,12 +148,14 @@ li:hover{
     margin: 5px;
     padding: 10px 5px 10px 5px;
 }
-.TitleH4{
+
+.TitleH4 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     margin: 10px;
 }
-.Text{
+
+.Text {
     border-bottom: solid 1px var(--Darkgrayish);
     margin: 10px;
     padding-bottom: 15px;
@@ -119,7 +172,8 @@ li:hover{
     font-family: 'Inter', sans-serif;
     transition: 1s;
 }
-.ContentStyleButton:hover{
+
+.ContentStyleButton:hover {
     transition: 1s;
     width: 100%;
 }
@@ -135,7 +189,7 @@ li:hover{
 
 }
 
-.ContainerFooter{
+.ContainerFooter {
     margin-top: 16px;
     display: flex;
     justify-content: space-between;
@@ -144,12 +198,14 @@ li:hover{
     padding-right: 5rem;
     margin-bottom: 3rem;
 }
+
 .ContentCards {
     display: flex;
     width: 19rem;
     align-items: center;
     justify-content: center;
 }
+
 .ContainerImage {
     height: 8rem;
 }
@@ -160,6 +216,7 @@ li:hover{
     color: var(--Grayish);
     margin-left: 5px;
 }
+
 .titleCard {
     margin-left: 5px;
 }
