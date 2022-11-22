@@ -11,25 +11,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | News homepage</title>
+  <title>Challenge | News homepage</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
   <header class="ContainerHeader">
     <img src="./assets/images/logo.svg" alt="">
-    <nav style="display: flex; border: solid; width: 50%; justify-content: space-between; list-style: none;">
+    <nav  class="ContainerNav">
       <li>Home</li>
       <li>New</li>
       <li>Popular</li>
@@ -40,66 +29,50 @@
 
   <main class="ContainerMain">
 
-    <div style="display: flex; flex-direction: column; align-items: center;">
+    <div class="ContentMain">
+
       <img class="ContentWebImage" src="./assets/images/image-web-3-desktop.jpg" />
-      <div style="
-     
-      display: flex; 
-      width: 100%; 
-      justify-content: space-between; 
-      align-items: center;">
+
+      <div  class="SectionMain">
+
         <h1 class="textStyleTitle">The Bright Future of Web 3.0?</h1>
 
-        <div style="
-       
-        width: 30rem;
-        height: 10rem;
-        display:flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        padding: 10px;
-        ">
+        <section class="ContentSection">
           <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
             hands
             of
             the people.
             But is it really fulfilling its promise?</p>
-          <button style="
-          background-color: var(--SoftRed); 
-          height: 3rem;
-          width: 13rem;
-          ">Read more</button>
-        </div>
+          <button class="ContentStyleButton">Read more</button>
+        </section>
       </div>
     </div>
 
 
     <article class="ContainerArticle">
-      <h2>New</h2>
 
-      <h3> Hydrogen VS Electric Cars</h3>
-      <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <h2 class="TitleArticle">New</h2>
+      <h4 class="TitleH4"> Hydrogen VS Electric Cars</h3>
+      <p class="Text" >Will hydrogen-fueled cars ever catch up to EVs?</p>
 
-      <h3>The Downsides of AI Artistry</h3>
-      <p> What are the possible adverse effects of on-demand AI image generation?
-      </p>
+      <h4 class="TitleH4">The Downsides of AI Artistry</h3>
+      <p class="Text" > What are the possible adverse effects of on-demand AI image generation?</p>
 
-      <h3>Is VC Funding Drying Up?</h3>
-      <p> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+      <h4 class="TitleH4">Is VC Funding Drying Up?</h3>
+      <p class="Text"> Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
 
     </article>
 
   </main>
 
-  <section class="ContainerSection">
+  <footer class="ContainerFooter">
 
     <div class="ContentCards">
-      <img class="ContainerImage" src="./assets/images/image-top-laptops.jpg" alt="web 1" />
+      <img class="ContainerImage" src="./assets/images/image-retro-pcs.jpg" alt="web 1" />
       <div>
-        <p>01</p>
-        <h4>Reviving Retro PCs</h4>
-        <p>What happens when old PCs are given modern upgrades?</p>
+        <p class="numberCard">01</p>
+        <h4 class="titleCard">Reviving Retro PCs</h4>
+        <p class="textCard" >What happens when old PCs are given modern upgrades?</p>
       </div>
     </div>
 
@@ -107,26 +80,21 @@
       <img class="ContainerImage" src="./assets/images/image-top-laptops.jpg" alt="web 1" />
 
       <div>
-        <p>02</p>
-        <h4> Top 10 Laptops of 2022</h4>
-        <p>Our best picks for various needs and budgets.</p>
+        <p class="numberCard">02</p>
+        <h4 class="titleCard"> Top 10 Laptops of 2022</h4>
+        <p class="textCard">Our best picks for various needs and budgets.</p>
       </div>
     </div>
 
     <div class="ContentCards">
 
-      <img class="ContainerImage" src="./assets/images/image-top-laptops.jpg" alt="web 1" />
+      <img class="ContainerImage" src="./assets/images/image-gaming-growth.jpg" alt="web 1" />
       <div>
-        <p>03</p>
-        <h4> The Growth of Gaming</h4>
-        <p>How the pandemic has sparked fresh opportunities.</p>
+        <p class="numberCard" >03</p>
+        <h4 class="titleCard" > The Growth of Gaming</h4>
+        <p class="textCard" >How the pandemic has sparked fresh opportunities.</p>
       </div>
     </div>
-  </section>
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
   </footer>
 
 </body>

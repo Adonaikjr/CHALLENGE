@@ -6,72 +6,155 @@
 
 body {
     max-width: 1440px;
-
-margin: 0 auto;
-padding: 0 auto;
-padding: 0px 20px 0px 20px;
+    margin: 0 auto;
+    padding: 0 auto;
+    padding: 0px 20px 0px 20px;
+    font-family: 'Inter', sans-serif;
+}
+p{
+    font-size: 16px;
 }
 
+
+h2{
+    color: var(--SoftOrange)
+}
+li {
+    cursor: pointer;
+}
 :root {
-    --SoftOrange: hsl(35, 77%, 62%) ;
+    --SoftOrange: hsl(35, 77%, 62%);
     --SoftRed: hsl(5, 85%, 63%);
-     --Off-white: hsl(36, 100%, 99%);
-      --Grayish: hsl(233, 8%, 79%);
-       --Darkgrayish: hsl(236, 13%, 42%) ;
-       --Verydark: hsl(240, 100%, 5%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish: hsl(233, 8%, 79%);
+    --Darkgrayish: hsl(236, 13%, 42%);
+    --Verydark: hsl(240, 100%, 5%);
 }
-.textStyleTitle{
-      font-family: 'Inter', sans-serif;
-        font-size: 50px;
-        font-weight: 800;
-       
-        width: 20rem;
+
+.textStyleTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    width: 20rem;
 }
 
 .ContainerHeader {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
-    padding: 10px;
+    padding: 5rem 5rem 2.5rem 5rem;
+}
+.ContainerNav{
+    display: flex; 
+    width: 50%; 
+    justify-content: space-between; 
+    list-style: none;
 }
 
 .ContentWebImage {
     width: 100%;
-  
 }
 
 .ContainerMain {
     display: flex;
-    
+    margin: 0rem 5rem 0rem 5rem;
+    gap: 1rem;
 }
 
-.ContainerArticle {
-  
-    background-color:  var( --Verydark);
-    color: var(--Off-white);
-    height: 30rem;
-    margin-left: 30px;
-}
-
-.ContainerSection {
-  
+.ContentMain {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
-.ContainerFooter {}
+.SectionMain{
+    display: flex; 
+    width: 100%; 
+    justify-content: space-between; 
+    align-items: center;
 
+}
+
+.ContainerArticle {
+    background-color: var(--Verydark);
+    color: var(--Off-white);
+    padding: 5px;
+}
+
+.TitleArticle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 5px;
+    padding: 10px 5px 10px 5px;
+}
+.TitleH4{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 10px;
+}
+.Text{
+    border-bottom: solid 1px var(--Darkgrayish);
+    margin: 10px;
+    padding-bottom: 15px;
+}
+
+
+.ContentStyleButton {
+    background-color: var(--SoftRed);
+    color: var(--Off-white);
+    height: 3rem;
+    width: 13rem;
+    border: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+.ContentStyleButton:hover{
+    transition: 2s;
+    background: red;
+    width: 100%;
+}
+
+.ContentSection {
+    width: 23rem;
+    text-align: left;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+}
+
+.ContainerFooter{
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 3rem;
+}
 .ContentCards {
-
     display: flex;
     width: 19rem;
     align-items: center;
     justify-content: center;
 }
-
 .ContainerImage {
     height: 8rem;
+}
+
+.numberCard {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--Grayish);
+    margin-left: 5px;
+}
+.titleCard {
+    margin-left: 5px;
+}
+
+.textCard {
+    margin-left: 5px;
 }
