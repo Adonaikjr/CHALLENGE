@@ -21,6 +21,15 @@ h2{
 }
 li {
     cursor: pointer;
+    border-bottom: solid 1px transparent;
+    transition: 0.5s;
+    padding-bottom: 4px;
+}
+li:hover{
+    transition: 1s;
+    border-bottom: solid 1px;
+    border-color: var(--SoftRed);
+    
 }
 :root {
     --SoftOrange: hsl(35, 77%, 62%);
@@ -108,10 +117,10 @@ li {
     border: none;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
+    transition: 1s;
 }
 .ContentStyleButton:hover{
-    transition: 2s;
-    background: red;
+    transition: 1s;
     width: 100%;
 }
 
